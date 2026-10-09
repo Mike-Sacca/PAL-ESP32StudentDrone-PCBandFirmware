@@ -1,0 +1,83 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: C:/WPI/PAL/PALSD-ESP32-Firmware/PALSD-Firmware/SS-Esp/ESP-FLY-PAL-Modified/Firmware/esp-drone/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/WPI/PAL/Espressif/tools/ninja/1.10.2/ninja.exe cmTC_c8cf7 && [1/2] Building C object CMakeFiles/cmTC_c8cf7.dir/src.c.obj
+[2/2] Linking C executable cmTC_c8cf7
+FAILED: cmTC_c8cf7 
+cmd.exe /C "cd . && C:\WPI\PAL\Espressif\tools\xtensa-esp32s3-elf\esp-2022r1-11.2.0\xtensa-esp32s3-elf\bin\xtensa-esp32s3-elf-gcc.exe -mlongcalls  CMakeFiles/cmTC_c8cf7.dir/src.c.obj -o cmTC_c8cf7   && cd ."
+c:/wpi/pal/espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/bin/ld.exe: CMakeFiles/cmTC_c8cf7.dir/src.c.obj:(.literal+0x4): undefined reference to `pthread_create'
+c:/wpi/pal/espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/bin/ld.exe: CMakeFiles/cmTC_c8cf7.dir/src.c.obj:(.literal+0x8): undefined reference to `pthread_detach'
+c:/wpi/pal/espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/bin/ld.exe: CMakeFiles/cmTC_c8cf7.dir/src.c.obj:(.literal+0xc): undefined reference to `pthread_cancel'
+c:/wpi/pal/espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/bin/ld.exe: CMakeFiles/cmTC_c8cf7.dir/src.c.obj:(.literal+0x10): undefined reference to `pthread_join'
+c:/wpi/pal/espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/bin/ld.exe: CMakeFiles/cmTC_c8cf7.dir/src.c.obj:(.literal+0x14): undefined reference to `pthread_atfork'
+c:/wpi/pal/espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/bin/ld.exe: CMakeFiles/cmTC_c8cf7.dir/src.c.obj:(.literal+0x18): undefined reference to `pthread_exit'
+c:/wpi/pal/espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/bin/ld.exe: CMakeFiles/cmTC_c8cf7.dir/src.c.obj: in function `main':
+src.c:(.text+0x1c): undefined reference to `pthread_create'
+c:/wpi/pal/espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/bin/ld.exe: src.c:(.text+0x26): undefined reference to `pthread_detach'
+c:/wpi/pal/espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/bin/ld.exe: src.c:(.text+0x30): undefined reference to `pthread_cancel'
+c:/wpi/pal/espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/bin/ld.exe: src.c:(.text+0x3c): undefined reference to `pthread_join'
+c:/wpi/pal/espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/bin/ld.exe: src.c:(.text+0x48): undefined reference to `pthread_atfork'
+c:/wpi/pal/espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/bin/ld.exe: src.c:(.text+0x50): undefined reference to `pthread_exit'
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: C:/WPI/PAL/PALSD-ESP32-Firmware/PALSD-Firmware/SS-Esp/ESP-FLY-PAL-Modified/Firmware/esp-drone/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/WPI/PAL/Espressif/tools/ninja/1.10.2/ninja.exe cmTC_01c29 && [1/2] Building C object CMakeFiles/cmTC_01c29.dir/CheckFunctionExists.c.obj
+[2/2] Linking C executable cmTC_01c29
+FAILED: cmTC_01c29 
+cmd.exe /C "cd . && C:\WPI\PAL\Espressif\tools\xtensa-esp32s3-elf\esp-2022r1-11.2.0\xtensa-esp32s3-elf\bin\xtensa-esp32s3-elf-gcc.exe -mlongcalls  -DCHECK_FUNCTION_EXISTS=pthread_create  CMakeFiles/cmTC_01c29.dir/CheckFunctionExists.c.obj -o cmTC_01c29  -lpthreads && cd ."
+c:/wpi/pal/espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/bin/ld.exe: cannot find -lpthreads
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function pthread_create exists in the pthread failed with the following output:
+Change Dir: C:/WPI/PAL/PALSD-ESP32-Firmware/PALSD-Firmware/SS-Esp/ESP-FLY-PAL-Modified/Firmware/esp-drone/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/WPI/PAL/Espressif/tools/ninja/1.10.2/ninja.exe cmTC_5a833 && [1/2] Building C object CMakeFiles/cmTC_5a833.dir/CheckFunctionExists.c.obj
+[2/2] Linking C executable cmTC_5a833
+FAILED: cmTC_5a833 
+cmd.exe /C "cd . && C:\WPI\PAL\Espressif\tools\xtensa-esp32s3-elf\esp-2022r1-11.2.0\xtensa-esp32s3-elf\bin\xtensa-esp32s3-elf-gcc.exe -mlongcalls  -DCHECK_FUNCTION_EXISTS=pthread_create  CMakeFiles/cmTC_5a833.dir/CheckFunctionExists.c.obj -o cmTC_5a833  -lpthread && cd ."
+c:/wpi/pal/espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/bin/ld.exe: cannot find -lpthread
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if compiler accepts -pthread failed with the following output:
+Change Dir: C:/WPI/PAL/PALSD-ESP32-Firmware/PALSD-Firmware/SS-Esp/ESP-FLY-PAL-Modified/Firmware/esp-drone/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/WPI/PAL/Espressif/tools/ninja/1.10.2/ninja.exe cmTC_376f8 && [1/2] Building C object CMakeFiles/cmTC_376f8.dir/CheckForPthreads.c.obj
+[2/2] Linking C executable cmTC_376f8
+FAILED: cmTC_376f8 
+cmd.exe /C "cd . && C:\WPI\PAL\Espressif\tools\xtensa-esp32s3-elf\esp-2022r1-11.2.0\xtensa-esp32s3-elf\bin\xtensa-esp32s3-elf-gcc.exe -mlongcalls  CMakeFiles/cmTC_376f8.dir/CheckForPthreads.c.obj -o cmTC_376f8  -pthread && cd ."
+xtensa-esp32s3-elf-gcc.exe: error: unrecognized command-line option '-pthread'
+ninja: build stopped: subcommand failed.
+
+
+

@@ -1,0 +1,190 @@
+** Drc report for PAL Drone Schematic.kicad_pcb **
+** Created on 2026-06-04T16:43:26 **
+** Report includes: Errors **
+
+** Found 43 DRC violations **
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(150.0000 mm, 100.0000 mm): Footprint E.P.D
+    @(158.5000 mm, 100.0000 mm): Footprint R9
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(150.0000 mm, 100.0000 mm): Footprint E.P.D
+    @(154.2500 mm, 104.5000 mm): Footprint R2
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(150.0000 mm, 100.0000 mm): Footprint E.P.D
+    @(150.0000 mm, 105.2500 mm): Footprint R13
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(150.0000 mm, 100.0000 mm): Footprint E.P.D
+    @(162.0000 mm, 101.1000 mm): Footprint C2
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(150.0000 mm, 100.0000 mm): Footprint E.P.D
+    @(138.2500 mm, 96.7500 mm): Footprint D4
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(150.0000 mm, 100.0000 mm): Footprint E.P.D
+    @(161.7500 mm, 103.2500 mm): Footprint D2
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(150.0000 mm, 100.0000 mm): Footprint E.P.D
+    @(145.7500 mm, 95.5000 mm): Footprint R4
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(150.0000 mm, 100.0000 mm): Footprint E.P.D
+    @(138.0000 mm, 98.9000 mm): Footprint C4
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(150.0000 mm, 100.0000 mm): Footprint E.P.D
+    @(162.0000 mm, 98.9000 mm): Footprint C1
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(150.0000 mm, 100.0000 mm): Footprint E.P.D
+    @(141.8000 mm, 105.0000 mm): Footprint Q3
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(150.0000 mm, 100.0000 mm): Footprint E.P.D
+    @(158.2000 mm, 95.0000 mm): Footprint Q1
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(150.0000 mm, 100.0000 mm): Footprint E.P.D
+    @(141.5000 mm, 100.0000 mm): Footprint R10
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(150.0000 mm, 100.0000 mm): Footprint E.P.D
+    @(155.6600 mm, 102.0000 mm): Footprint C7
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(150.0000 mm, 100.0000 mm): Footprint E.P.D
+    @(154.2500 mm, 94.5000 mm): Footprint R1
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(150.0000 mm, 100.0000 mm): Footprint E.P.D
+    @(145.7500 mm, 105.5000 mm): Footprint R3
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(150.0000 mm, 100.0000 mm): Footprint E.P.D
+    @(150.0000 mm, 100.0000 mm): Footprint U1
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(150.0000 mm, 100.0000 mm): Footprint E.P.D
+    @(148.7500 mm, 95.0000 mm): Footprint ESP+1
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(148.7500 mm, 95.0000 mm): PTH pad 1 [VBat_3.7V] of ESP+1
+    @(150.0000 mm, 100.0000 mm): Footprint E.P.D
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(150.0000 mm, 100.0000 mm): Footprint E.P.D
+    @(145.2500 mm, 102.0000 mm): Footprint C8
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(150.0000 mm, 100.0000 mm): Footprint E.P.D
+    @(158.2000 mm, 105.0000 mm): Footprint Q2
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(150.0000 mm, 100.0000 mm): Footprint E.P.D
+    @(154.7500 mm, 98.0000 mm): Footprint C6
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(150.0000 mm, 100.0000 mm): Footprint E.P.D
+    @(145.2500 mm, 98.0000 mm): Footprint C5
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(150.0000 mm, 100.0000 mm): Footprint E.P.D
+    @(138.2500 mm, 103.2500 mm): Footprint D3
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(150.0000 mm, 100.0000 mm): Footprint E.P.D
+    @(151.2500 mm, 95.0000 mm): Footprint ESP-1
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(151.2500 mm, 95.0000 mm): PTH pad 1 [GND] of ESP-1
+    @(150.0000 mm, 100.0000 mm): Footprint E.P.D
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(150.0000 mm, 100.0000 mm): Footprint E.P.D
+    @(161.7500 mm, 96.7500 mm): Footprint D1
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(150.0000 mm, 100.0000 mm): Footprint E.P.D
+    @(141.8000 mm, 95.0000 mm): Footprint Q4
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(150.0000 mm, 100.0000 mm): Footprint E.P.D
+    @(138.0000 mm, 101.1000 mm): Footprint C3
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(148.3500 mm, 86.0000 mm): Footprint R14
+    @(151.6500 mm, 86.0000 mm): Footprint R11
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(132.0000 mm, 100.0000 mm): Footprint H4
+    @(135.0000 mm, 100.0000 mm): Footprint R-LED1
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(168.0000 mm, 100.0000 mm): Footprint H2
+    @(165.0000 mm, 100.0000 mm): Footprint G-LED1
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(146.5002 mm, 114.9998 mm): Footprint TL2
+    @(148.7400 mm, 113.7200 mm): Footprint P9
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(146.5002 mm, 114.9998 mm): Footprint TL2
+    @(149.0000 mm, 111.7500 mm): Footprint J1
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(151.2750 mm, 113.7200 mm): Footprint P10
+    @(153.5002 mm, 114.9998 mm): Footprint TL1
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(151.2750 mm, 113.7200 mm): Footprint P10
+    @(149.0000 mm, 111.7500 mm): Footprint J1
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(151.2750 mm, 113.7200 mm): PTH pad 1 [GND] of P10
+    @(149.0000 mm, 111.7500 mm): Footprint J1
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(148.7400 mm, 113.7200 mm): Footprint P9
+    @(149.0000 mm, 111.7500 mm): Footprint J1
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(148.7400 mm, 113.7200 mm): PTH pad 1 [VBat_3.7V] of P9
+    @(149.0000 mm, 111.7500 mm): Footprint J1
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(153.5002 mm, 114.9998 mm): Footprint TL1
+    @(149.0000 mm, 111.7500 mm): Footprint J1
+[starved_thermal]: Thermal relief connection to zone incomplete (layer Top Signal Copper; zone min spoke count 2; actual 1)
+    Local override; error
+    @(124.4500 mm, 75.0300 mm): Zone 'Top GND Shield' [GND] on Top Signal Copper, priority 3
+    @(151.2500 mm, 95.0000 mm): PTH pad 1 [GND] of ESP-1
+[starved_thermal]: Thermal relief connection to zone incomplete (layer Top Signal Copper; zone min spoke count 2; actual 1)
+    Local override; error
+    @(124.4500 mm, 75.0300 mm): Zone 'Top GND Shield' [GND] on Top Signal Copper, priority 3
+    @(146.6625 mm, 95.5000 mm): Pad 1 [GND] of R4 on Top Signal Copper
+[starved_thermal]: Thermal relief connection to zone incomplete (layer Top Signal Copper; zone min spoke count 2; actual 1)
+    Local override; error
+    @(124.4500 mm, 75.0300 mm): Zone 'Top GND Shield' [GND] on Top Signal Copper, priority 3
+    @(155.0800 mm, 108.4550 mm): Pad 13 [GND] of E.P.D on Top Signal Copper
+[starved_thermal]: Thermal relief connection to zone incomplete (layer Top Signal Copper; zone min spoke count 2; actual 1)
+    Local override; error
+    @(124.4500 mm, 75.0300 mm): Zone 'Top GND Shield' [GND] on Top Signal Copper, priority 3
+    @(155.0800 mm, 107.6200 mm): PTH pad 13 [GND] of E.P.D
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **

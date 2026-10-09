@@ -54,7 +54,6 @@ The Crazyflie project provided important foundations for flight control, communi
 This repository contains modifications made or maintained by:
 
 **Maintainer:** Michael Sacca
-**Organization:** City of Elizabeth Recreation Department
 **Modification period:** May 20, 2026–present
 
 Changes in this branch may include:
